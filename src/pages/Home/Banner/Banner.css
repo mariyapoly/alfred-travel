@@ -1,12 +1,12 @@
-.carousel-caption {
+.banner-part .carousel-caption {
     top: 35%;
 }
-.carousel-caption h1 {
+.banner-part .carousel-caption h1 {
     font-size: 65px;
     font-weight: 700;
     margin-bottom: 15px;
 }
-.carousel-caption p {
+.banner-part .carousel-caption p {
     font-size: 23px;
     width: 518px;
     margin: 0 auto;
@@ -18,6 +18,6 @@ span.carousel-control-next-icon {
 span.carousel-control-prev-icon {
     display: none;
 }
-.carousel-indicators [data-bs-target] { 
+.banner-part .carousel-indicators [data-bs-target] { 
     display: none;
 }

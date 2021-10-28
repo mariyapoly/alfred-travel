@@ -7,7 +7,7 @@ import bannerImg3 from '../../../images/home-slider-img-3.jpg';
 
 const Banner = () => {
     return (
-        <div>
+        <div className="banner-part">
             <Carousel fade>
                 <Carousel.Item>
                     <img
