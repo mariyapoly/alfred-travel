@@ -1,0 +1,23 @@
+.carousel-caption {
+    top: 35%;
+}
+.carousel-caption h1 {
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.carousel-caption p {
+    font-size: 23px;
+    width: 518px;
+    margin: 0 auto;
+    line-height: 33px;
+}
+span.carousel-control-next-icon {
+    display: none;
+}
+span.carousel-control-prev-icon {
+    display: none;
+}
+.carousel-indicators [data-bs-target] { 
+    display: none;
+}

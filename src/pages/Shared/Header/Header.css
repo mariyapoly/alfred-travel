@@ -1,0 +1,35 @@
+nav.navbar {
+    padding: 25px 0;
+    background-color: #fff;
+}
+.alfred-logo {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 28px;
+    color: #087dc2;
+    font-weight: 600;
+}
+.alfred-logo:hover {
+    color: #087dc2;
+}
+.navbar-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 40px;
+    color: #666;
+    font-weight: 700;
+    font-size: 14px;
+}
+.navbar-nav a.selected {
+    position: relative;
+}
+.navbar-nav a.selected::before {
+    position: absolute;
+    bottom: -2px;
+    content: '';
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #087dc2;
+    height: 2px;
+}
