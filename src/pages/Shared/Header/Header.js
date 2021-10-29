@@ -19,6 +19,9 @@ const Header = () => {
                         {
                             !user.email ? <NavLink activeClassName="selected" to="/login">login</NavLink> :
                                 <div>
+                                    <NavLink activeClassName="selected" to="/myOrder">my order</NavLink>
+                                    <NavLink activeClassName="selected" to="/orders">Manage All Orders</NavLink>
+                                    <NavLink activeClassName="selected" to="/addService">Add service</NavLink>
                                     <button className="logout-btn" onClick={logOut} to="/login">logout</button>
                                     <span className="user-name">{user.displayName}</span>
                                 </div>

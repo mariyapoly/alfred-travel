@@ -1,0 +1,80 @@
+.service-details-bg {
+    background: url(../../images/home-slider-img-1.jpg) no-repeat center;
+    background-size: cover;
+    padding: 200px 0;
+}
+.service-details-container {
+    padding: 105px 0;
+    background-color: #F4F4F4;
+    position: relative;
+}
+.service-details-bg h1 {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+}
+.service-details p, ul li, .table tr td {
+    color: #666;
+}
+.service-details h2, .booking h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #303030;
+    margin-bottom: 30px;
+}
+p.service-price {
+    color: #087dc2;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+}
+p.service-des {
+    padding-right: 130px;
+}
+ul.service-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin:  40px 0;
+}
+ul.service-list li {
+    margin-right: 40px;
+}
+.services-des ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+ 
+
+.table-title {
+    font-weight: 700;
+    font-size: 21px;
+    color: #000;
+    width: 40%;
+}
+.services-des .text {
+    width: 60%;
+}
+.booking form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border: 1px solid #666;
+}
+.booking {
+    padding-left: 100px;
+}
+input.submit-btn {
+    background: #087dc2;
+    border: 0;
+    color: #fff;
+    text-transform: capitalize;
+    border: 1px solid #087dc2;
+}

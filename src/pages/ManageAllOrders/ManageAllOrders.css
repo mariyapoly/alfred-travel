@@ -1,0 +1,50 @@
+.orders {
+    padding: 80px 0;
+    background: #F4F4F4;
+}
+.orders ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.orders ul li {
+    font-size: 14px;
+}
+.orders ul li:nth-Child(1) {
+    width: 12%;
+}
+.orders ul li:nth-Child(2) {
+    width: 23%;
+}
+.orders ul li:nth-Child(3) {
+    width: 18%;
+}
+.orders ul li:nth-Child(4) {
+    width: 11%;
+}
+.orders ul li:nth-Child(5) {
+    width: 10%;
+}
+.orders ul li:nth-Child(6) {
+    width: 5%;
+    text-align: center;
+}
+.orders ul li:nth-Child(7) {
+    width: 7%;
+    text-align: right;
+}
+.orders ul li:nth-Child(8) {
+    width: 7%;
+    text-align: right;
+}
+.orders ul li:nth-Child(9) {
+    width: 7%;
+    text-align: right;
+}
+.orders ul li button, .delete-btn {
+    border: 0;
+    background: no-repeat;
+    padding: 0;
+    text-transform: capitalize;
+    color: #666;
+}

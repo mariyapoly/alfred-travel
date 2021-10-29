@@ -1,0 +1,45 @@
+.my-orders {
+    padding: 80px 0;
+    background: #F4F4F4;
+}
+.my-orders ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.my-orders ul li {
+    font-size: 14px;
+}
+.my-orders ul li:nth-Child(1) {
+    width: 15%;
+}
+.my-orders ul li:nth-Child(2) {
+    width: 25%;
+}
+.my-orders ul li:nth-Child(3) {
+    width: 20%;
+}
+.my-orders ul li:nth-Child(4) {
+    width: 11%;
+}
+.my-orders ul li:nth-Child(5) {
+    width: 10%;
+}
+.my-orders ul li:nth-Child(6) {
+    width: 5%;
+    text-align: center;
+}
+.my-orders ul li:nth-Child(7) {
+    width: 7%;
+    text-align: right;
+}
+.my-orders ul li:nth-Child(8) {
+    width: 7%;
+    text-align: right;
+}
+ul.order-title li {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 700;
+    color: #303030;
+}

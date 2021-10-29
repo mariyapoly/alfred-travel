@@ -1,0 +1,30 @@
+.add-services {
+    padding-top: 80px;
+}
+.add-services h1 {
+    color: #303030;
+    font-size: 47px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50 px;
+}
+.add-services .user-entry-form {
+    margin: 30px auto 20px;
+    padding: 80px;
+}
+.add-services .user-entry-form input {
+    width: 100%;
+    background: no-repeat;
+    border: 1px solid #fff;
+    margin: 15px 0;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: #fff;
+}
+.add-services .user-entry-form input::placeholder {
+    color: #fff;
+}
+.add-services .user-entry-form input.submit-btn {
+    background: #087dc2;
+    border-color: #087dc2;
+}

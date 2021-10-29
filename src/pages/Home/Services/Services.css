@@ -1,0 +1,18 @@
+.service-part {
+    position: relative;
+    padding: 120px 0;
+}
+.spinner-home {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.service-part h2 {
+    color: #303030;
+    font-size: 47px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
