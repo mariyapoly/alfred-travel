@@ -1,6 +1,7 @@
 nav.navbar {
     padding: 25px 0;
     background-color: #fff;
+    box-shadow: 0px 13px 25px -12px rgba(0, 0 ,0,0.25);
 }
 .alfred-logo {
     text-transform: capitalize;
@@ -12,13 +13,24 @@ nav.navbar {
 .alfred-logo:hover {
     color: #087dc2;
 }
-.navbar-nav a {
+.navbar-nav a, .logout-btn {
     text-decoration: none;
     text-transform: uppercase;
     margin-left: 40px;
     color: #666;
     font-weight: 700;
     font-size: 14px;
+}
+.user-name {
+    margin-left: 40px;
+    color: #666;
+    font-weight: 700;
+    font-size: 16px;
+}
+.logout-btn {
+    padding: 0;
+    border: 0;
+    background: 0;
 }
 .navbar-nav a.selected {
     position: relative;

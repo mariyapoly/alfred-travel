@@ -1,0 +1,50 @@
+.user-entry-form {
+    width: 700px;
+    background: #1C1C1C;
+    text-align: center;
+    padding: 160px 0 130px;
+    position: relative;
+    margin:  80px auto 20px;
+}
+.user-entry-form a.signup, .user-entry-form a.login  {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 23px;
+}
+.user-entry-form .active {
+    background: #242424;
+}
+.user-entry-form a.signup {
+    left: auto;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+.user-entry-form button {
+    background: no-repeat;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    margin-bottom: 15px;
+}
+.user-entry-form button span {
+    margin: 0 50px;
+}
+.user-entry-form span {
+    color: #fff;
+}
+
+.user-entry-form a.account {
+    color: #087dc2;
+    text-decoration: none;
+    border-bottom: 1px solid #087dc2;
+}
