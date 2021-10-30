@@ -3,8 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { useForm } from "react-hook-form";
-import './ServiceDetails.css'
+import './ServiceDetails.css';
 import useAuth from '../../hooks/useAuth';
+import swal from 'sweetalert';
 
 const ServiceDetails = () => {
 
@@ -35,7 +36,11 @@ const ServiceDetails = () => {
         })
             .then(function (response) {
                 if (response.data.insertedId) {
-                    alert('order succussfully')
+
+                    swal({
+                        title: "Booking Succussfully!",
+                        icon: "success",
+                    });
                     reset();
                 }
             })

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
+import swal from 'sweetalert';
 import './ManageAllOrders.css'
 
 const ManageAllOrders = () => {
@@ -18,9 +19,23 @@ const ManageAllOrders = () => {
         axios.delete(`http://localhost:5000/orders/${id}`)
             .then(function (response) {
                 if (response.data.deletedCount > 0) {
-                    const remeaning = orders.filter(pd => pd._id !== id);
-                    setOrders(remeaning);
-                    alert('are you sure')
+                    swal({
+                        title: "Are you sure?",
+                        text: "delete for this order item",
+                        icon: "warning",
+                        dangerMode: true,
+                    })
+                        .then(willDelete => {
+                            if (willDelete) {
+                                swal({
+                                    title: "Deleted!",
+                                    text: "Deleted Successfully!",
+                                    icon: "success",
+                                });
+                                const remeaning = orders.filter(pd => pd._id !== id);
+                                setOrders(remeaning);
+                            }
+                        });
                 }
             })
     }
@@ -29,7 +44,10 @@ const ManageAllOrders = () => {
         axios.put(`http://localhost:5000/orders/${id}`)
             .then(function (response) {
                 if (response.data.modifiedCount) {
-                    alert('status approved')
+                    swal({
+                        title: "Status Approved",
+                        icon: "success",
+                    });
                     setRemeaning(true)
                 } else {
                     setRemeaning(false)

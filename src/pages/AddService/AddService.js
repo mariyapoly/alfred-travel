@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
+import swal from 'sweetalert';
 import './AddService.css'
 
 const AddService = () => {
@@ -16,7 +17,10 @@ const AddService = () => {
         })
             .then(function (response) {
                 if (response.data.insertedId) {
-                    alert('service added successfully');
+                    swal({
+                        title: "Service Added Successfully",
+                        icon: "success",
+                    });
                     reset()
                 }
             })

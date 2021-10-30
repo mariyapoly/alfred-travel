@@ -1,0 +1,40 @@
+.single-team {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.team-thumb {
+    width: 50%;
+}
+
+.team-thumb img {
+    width: 100%;
+}
+
+.team-des {
+    width: 50%;
+    padding: 0 31px;
+}
+.team-des h4 {
+    color: #303030;
+    font-weight: 700;
+}
+
+.team-des p {
+    color: #666;
+}
+.team-facebook, .team-pinterest, .team-twitter, .team-youtube {
+    color: #3b5997;
+    font-size: 25px;
+    margin-right: 15px;
+}
+.team-pinterest {
+    color: #006dc0;
+}
+.team-twitter {
+    color: #29c5f6;
+}
+.team-youtube {
+    color: #d13d2f;
+}

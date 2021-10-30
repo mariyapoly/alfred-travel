@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
+import swal from 'sweetalert';
 import './MyOrder.css'
 
 const MyOrder = () => {
@@ -19,9 +20,24 @@ const MyOrder = () => {
         axios.delete(`http://localhost:5000/orders/${id}`)
             .then(function (response) {
                 if (response.data.deletedCount > 0) {
-                    const remeaning = orders.filter(pd => pd._id !== id);
-                    setOrders(remeaning);
-                    alert('are you sure')
+                    swal({
+                        title: "Are you sure?",
+                        text: "delete for this order item",
+                        icon: "warning",
+                        dangerMode: true,
+                    })
+                        .then(willDelete => {
+                            if (willDelete) {
+                                swal({
+                                    title: "Deleted!",
+                                    text: "Deleted Successfully!",
+                                    icon: "success",
+                                });
+                                const remeaning = orders.filter(pd => pd._id !== id);
+                                setOrders(remeaning);
+                            }
+                        });
+
                 }
             })
     }

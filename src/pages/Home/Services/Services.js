@@ -19,7 +19,7 @@ const Services = () => {
     return (
         <div className="service-part">
             <Container>
-                <h2>Explore the World for Yourself</h2>
+                <h2 className="section-title">Explore the World for Yourself</h2>
                 {
                     !services.length ? <Spinner className="spinner-home" animation="border" variant="secondary" /> :
                         <Row>
