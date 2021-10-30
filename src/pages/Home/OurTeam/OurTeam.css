@@ -1,4 +1,17 @@
+/*-------- team-area css --------*/
 .team-area {
     background: #F4F4F4;
     padding: 100px 0 70px; 
 }
+/*-------- media query --------*/
+@media only screen and (max-width:575px) {
+    .team-area {
+        padding: 60px 0 20px; 
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .team-area {
+        padding: 60px 0 20px; 
+    }
+}
+

@@ -11,6 +11,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const Testimonial = () => {
     return (
+        // testimonial-part start
         <div className="testimonial-part">
             <Container fluid>
                 <Row>
@@ -74,6 +75,7 @@ const Testimonial = () => {
                 </Row>
             </Container>
         </div>
+        // testimonial-part end
     );
 };
 

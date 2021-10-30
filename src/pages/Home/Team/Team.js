@@ -11,6 +11,7 @@ const Team = ({ team }) => {
     const { des, img, name, role } = team || {};
 
     return (
+        // single-team start
         <Col lg={6}>
             <div className="single-team">
                 <div className="team-thumb">
@@ -29,6 +30,7 @@ const Team = ({ team }) => {
                 </div>
             </div>
         </Col>
+        // single-team end
     );
 };
 

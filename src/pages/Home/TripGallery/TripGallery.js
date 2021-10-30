@@ -17,9 +17,13 @@ const TripGallery = () => {
 
 
     return (
+        // galler-area start
         <div className="gallery-area">
             <Container fluid>
-                <h2 className="section-title">TRIP GALLERY</h2>
+                <div className="section-top">
+                    <h2 className="section-title">trip gallery</h2>
+                    <p>Following is the gallery which contains best of the moments captured from the trips our clients has enjoyed while visiting their travel destinations.</p>
+                </div>
                 <Row>
                     {
                         images.map(image => <TripImage
@@ -29,6 +33,7 @@ const TripGallery = () => {
                 </Row>
             </Container>
         </div>
+        // galler-area end
     );
 };
 

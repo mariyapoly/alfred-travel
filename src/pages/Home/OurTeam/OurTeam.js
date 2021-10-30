@@ -17,9 +17,13 @@ const OurTeam = () => {
 
 
     return (
+        // team-area start
         <div className="team-area">
             <Container>
-                <h2 className="section-title">MEET OUR TRIP ORGANIZER</h2>
+                <div className="section-top">
+                    <h2 className="section-title">meet our trip organizer</h2>
+                    <p>We have the best team in the whole world that organizes the best trips for our clients and make their journeys life remembering.</p>
+                </div>
                 <Row>
                     {
                         teams.map(team => <Team
@@ -30,6 +34,7 @@ const OurTeam = () => {
                 </Row>
             </Container>
         </div>
+        // team-area end
     );
 };
 

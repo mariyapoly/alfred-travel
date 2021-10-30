@@ -9,7 +9,8 @@ const TripImage = ({ image }) => {
     const { img } = image || {};
 
     return (
-        <Col lg={3}>
+        // trip-img start
+        <Col lg={3} md={4}>
             <div onClick={handleShow} className="trip-img">
                 <div className="thumb">
                     <img src={img} alt="" />
@@ -24,6 +25,7 @@ const TripImage = ({ image }) => {
                 </Modal.Body>
             </Modal>
         </Col>
+        // trip-img end
     );
 };
 

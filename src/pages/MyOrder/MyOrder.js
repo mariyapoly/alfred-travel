@@ -43,13 +43,16 @@ const MyOrder = () => {
     }
 
     return (
+        // my-orders start
         <div className="my-orders">
             <Container>
-                <Row>
+                <h2 className="section-title">my booking list</h2>
+                <Row className="order-container">
                     <ul className="order-title">
-                        <li>order item</li>
+                        <li>book item</li>
                         <li>email</li>
                         <li>name</li>
+                        <li>address</li>
                         <li>phone</li>
                         <li>date</li>
                         <li>tickets</li>
@@ -57,21 +60,36 @@ const MyOrder = () => {
                         <li>delete</li>
                     </ul>
                     {
-                        orders.map(order => <ul key={order._id}>
-                            <li>{order?.title}</li>
-                            <li>{order?.email}</li>
-                            <li>{order?.name}</li>
-                            <li>{order?.phone}</li>
-                            <li>{order?.date}</li>
-                            <li>{order?.tickets}</li>
-                            <li>{order?.status}</li>
-                            <li><button className="delete-btn" onClick={() => handleDeleteBtn(order._id)}>delete</button></li>
-                        </ul>)
+                        orders.map(order => <div key={order._id} className="order">
+                            <ul className="order-sm-title">
+                                <li>book item</li>
+                                <li>email</li>
+                                <li>name</li>
+                                <li>address</li>
+                                <li>phone</li>
+                                <li>date</li>
+                                <li>tickets</li>
+                                <li>status</li>
+                                <li>delete</li>
+                            </ul>
+                            <ul className="order-info">
+                                <li>{order?.title}</li>
+                                <li>{order?.email}</li>
+                                <li>{order?.name}</li>
+                                <li>{order?.address}</li>
+                                <li>{order?.phone}</li>
+                                <li>{order?.date}</li>
+                                <li>{order?.tickets}</li>
+                                <li>{order?.status}</li>
+                                <li><button className="delete-btn" onClick={() => handleDeleteBtn(order._id)}>delete</button></li>
+                            </ul>
+                        </div>
+                        )
                     }
                 </Row>
             </Container>
-
         </div>
+        // my-orders end
     );
 };
 

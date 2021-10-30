@@ -1,3 +1,4 @@
+/*-------- service-part css --------*/
 .service-part {
     position: relative;
     padding: 120px 0;
@@ -11,8 +12,49 @@
 }
 .section-title {
     color: #303030;
-    font-size: 47px;
+    font-size: 42px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.section-top {
+    margin-bottom: 60px;
+}
+.section-top p {
+    color: #666;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
+/*-------- media query --------*/
+@media only screen and (max-width:575px) {
+    .section-top p {
+        width: auto;
+    }
+    .service-part {
+        padding: 60px 0;
+    }
+    .section-title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .section-top {
+        margin-bottom: 35px;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .section-top p {
+        width: auto;
+    }
+    .service-part {
+        padding: 60px 0;
+    }
+    .section-title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .section-top {
+        margin-bottom: 35px;
+    }
 }

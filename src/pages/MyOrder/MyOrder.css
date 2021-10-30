@@ -1,11 +1,18 @@
+/*------- my-order css --------*/
 .my-orders {
     padding: 80px 0;
     background: #F4F4F4;
+}
+.my-orders .section-title {
+    margin-bottom: 50px;
 }
 .my-orders ul {
     display: flex;
     padding: 0;
     list-style: none;
+}
+.order {
+    padding: 0;
 }
 .my-orders ul li {
     font-size: 14px;
@@ -14,32 +21,152 @@
     width: 15%;
 }
 .my-orders ul li:nth-Child(2) {
-    width: 25%;
+    width: 22%;
 }
 .my-orders ul li:nth-Child(3) {
-    width: 20%;
+    width: 15%;
 }
 .my-orders ul li:nth-Child(4) {
-    width: 11%;
-}
-.my-orders ul li:nth-Child(5) {
     width: 10%;
 }
+.my-orders ul li:nth-Child(5) {
+    width: 11%;
+}
 .my-orders ul li:nth-Child(6) {
-    width: 5%;
-    text-align: center;
+    width: 8%;
 }
 .my-orders ul li:nth-Child(7) {
-    width: 7%;
-    text-align: right;
+    width: 5%;
+    text-align: center;
 }
 .my-orders ul li:nth-Child(8) {
     width: 7%;
     text-align: right;
 }
-ul.order-title li {
+.my-orders ul li:nth-Child(9) {
+    width: 7%;
+    text-align: right;
+}
+ul.order-title li , ul.order-sm-title li {
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 700;
     color: #303030;
+}
+ul.order-sm-title {
+    display: none;
+}
+/*------ media qurey -------*/
+@media only screen and (max-width:575px) { 
+    .my-orders {
+        padding: 60px 0 50px;
+        margin-top: 70px;
+    }
+    .order {
+        padding: 0;
+        border-bottom: 1px solid #666;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .my-orders ul {
+        flex-direction: column;
+    }
+    ul.order-title {
+        display: none;
+    }
+    ul.order-sm-title {
+        display: block;
+    }
+   
+    ul.order-sm-title li:nth-Child(1) {
+        margin-top: 3px;
+    }
+    ul.order-sm-title {
+        width: 30%;
+    }
+    ul.order-info {
+        width: 70%;
+    }
+    .my-orders ul li {
+        margin: 5px 0;
+    }
+    ul.order-sm-title li {
+        height: 37px;
+    }
+    .my-orders ul li:nth-Child(1),.my-orders ul li:nth-Child(2),.my-orders ul li:nth-Child(3),.my-orders ul li:nth-Child(4),.my-orders ul li:nth-Child(5),.my-orders ul li:nth-Child(6),.my-orders ul li:nth-Child(7),.my-orders ul li:nth-Child(8),.my-orders ul li:nth-Child(9){
+        width: auto;
+        text-align: left;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px) { 
+    .my-orders {
+        padding: 60px 0 50px;
+        margin-top: 70px;
+    }
+    .order {
+        padding: 0;
+        border-bottom: 1px solid #666;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .my-orders ul {
+        flex-direction: column;
+    }
+    ul.order-title {
+        display: none;
+    }
+    ul.order-sm-title {
+        display: block;
+    }
+    
+    ul.order-sm-title {
+        width: 30%;
+    }
+    ul.order-info {
+        width: 70%;
+    }
+    .my-orders ul li {
+        margin: 5px 0;
+    }
+    .my-orders ul li:nth-Child(1),.my-orders ul li:nth-Child(2),.my-orders ul li:nth-Child(3),.my-orders ul li:nth-Child(4),.my-orders ul li:nth-Child(5),.my-orders ul li:nth-Child(6),.my-orders ul li:nth-Child(7),.my-orders ul li:nth-Child(8),.my-orders ul li:nth-Child(9){
+        width: auto;
+        text-align: left;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px) { 
+    .my-orders {
+        margin-top: 70px;
+    }
+    .order {
+        padding: 0;
+        border-bottom: 1px solid #666;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .my-orders ul {
+        flex-direction: column;
+    }
+    ul.order-title {
+        display: none;
+    }
+    ul.order-sm-title {
+        display: block;
+    }
+    
+    ul.order-sm-title {
+        width: 30%;
+    }
+    ul.order-info {
+        width: 70%;
+    }
+    .my-orders ul li {
+        margin: 5px 0;
+    }
+    ul.order-sm-title li {
+        margin: 6.5px;
+    }
+    .my-orders ul li:nth-Child(1),.my-orders ul li:nth-Child(2),.my-orders ul li:nth-Child(3),.my-orders ul li:nth-Child(4),.my-orders ul li:nth-Child(5),.my-orders ul li:nth-Child(6),.my-orders ul li:nth-Child(7),.my-orders ul li:nth-Child(8),.my-orders ul li:nth-Child(9){
+        width: auto;
+        text-align: left;
+    }
 }

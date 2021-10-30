@@ -14,19 +14,20 @@ import './Footer.css'
 
 const Footer = () => {
     return (
+        // footer-part start
         <div className="footer-part">
             <Container>
                 <Row>
-                    <Col lg={3}>
+                    <Col lg={3} md={6}>
                         <div className="footer-widget">
                             <NavLink className="alfred-logo" to="/">alfred travel</NavLink>
-                            <p>we are provite best service all time, Our trip guide is informative, friendly</p>
+                            <p>Alfred Travel is a simply stunning theme perfect for all types of travel & tourism businesses</p>
                             <p><FontAwesomeIcon className="footer-icon" icon={faPhoneAlt} /> 1-677-124-44227</p>
                             <p><FontAwesomeIcon className="footer-icon" icon={faMapMarkerAlt} /> Eighth Avenue 487, New York</p>
                             <p><FontAwesomeIcon className="footer-icon" icon={faEnvelope} />alfred@travel.com</p>
                         </div>
                     </Col>
-                    <Col lg={4}>
+                    <Col lg={4} md={6}>
                         <div className="footer-widget">
                             <h4>Latest Posts</h4>
                             <p className="post-text">Traveling – It Leaves You Speechless, Then Turns You Into A Storyteller</p>
@@ -35,7 +36,7 @@ const Footer = () => {
                             <small>june 15, 2022</small>
                         </div>
                     </Col>
-                    <Col lg={2}>
+                    <Col lg={2} md={6}>
                         <div className="footer-widget">
                             <h4>Company</h4>
                             <ul>
@@ -47,7 +48,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </Col>
-                    <Col lg={3}>
+                    <Col lg={3} md={6}>
                         <div className="footer-widget">
                             <h4>Instagram</h4>
                             <ul className="footer-instagram">
@@ -63,6 +64,7 @@ const Footer = () => {
                 </Row>
             </Container>
         </div>
+        // footer-part end
     );
 };
 

@@ -26,10 +26,11 @@ const AddService = () => {
             })
     };
     return (
+        // add-services start
         <div className="add-services">
             <Container>
                 <Row>
-                    <h1>Add A New Service</h1>
+                    <h1 className="section-title">Add A New Service</h1>
                     <div className="user-entry-form">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <input placeholder="Service Title" {...register("title")} />
@@ -42,6 +43,7 @@ const AddService = () => {
                 </Row>
             </Container>
         </div>
+        // add-services end
     );
 };
 

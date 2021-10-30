@@ -51,3 +51,21 @@ p.post-text {
     margin-bottom: 15px;
     display: inline-block;
 }
+/*-------- media query --------*/
+@media only screen and (max-width:575px) {
+    .footer-part {
+        padding: 50px 0 50px;
+    }
+    .footer-widget {
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .footer-part {
+        padding: 50px 0 50px;
+    }
+    .footer-widget {
+        margin-bottom: 15px;
+    }
+}
+

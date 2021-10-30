@@ -1,6 +1,10 @@
+/*-------- manage order css ---------*/
 .orders {
     padding: 80px 0;
     background: #F4F4F4;
+}
+.orders .section-title {
+    margin-bottom: 50px;
 }
 .orders ul {
     display: flex;
@@ -14,31 +18,35 @@
     width: 12%;
 }
 .orders ul li:nth-Child(2) {
-    width: 23%;
+    width: 22%;
 }
 .orders ul li:nth-Child(3) {
-    width: 18%;
+    width: 15%;
 }
 .orders ul li:nth-Child(4) {
-    width: 11%;
+    width: 12%;
 }
 .orders ul li:nth-Child(5) {
-    width: 10%;
+    width: 8%;
 }
 .orders ul li:nth-Child(6) {
-    width: 5%;
+    width: 8%;
     text-align: center;
 }
 .orders ul li:nth-Child(7) {
-    width: 7%;
-    text-align: right;
+    width: 5%;
+    text-align: center;
 }
 .orders ul li:nth-Child(8) {
-    width: 7%;
+    width: 6%;
     text-align: right;
 }
 .orders ul li:nth-Child(9) {
-    width: 7%;
+    width: 6%;
+    text-align: right;
+}
+.orders ul li:nth-Child(10) {
+    width: 6%;
     text-align: right;
 }
 .orders ul li button, .delete-btn {
@@ -47,4 +55,101 @@
     padding: 0;
     text-transform: capitalize;
     color: #666;
+}
+/*-------- media query ---------*/
+@media only screen and (max-width:575px) { 
+    .orders  {
+        padding: 60px 0 50px;
+        margin-top: 71px;
+    }
+    .orders ul {
+        flex-direction: column;
+    }
+    .order-container {
+        padding: 0 15px;
+    }
+    ul.order-title {
+        width: 30%;
+    }
+    ul.order-info {
+        width: 70%;
+    }
+    ul.order-info li {
+        height: 32px;
+    }
+    
+    ul.order-sm-title li {
+        height: 37px;
+    }
+    .orders ul li {
+        margin: 5px 0;
+    }
+    .orders ul li:nth-Child(1),.orders ul li:nth-Child(2),.orders ul li:nth-Child(3),.orders ul li:nth-Child(4),.orders  ul li:nth-Child(5),.orders  ul li:nth-Child(6),.orders  ul li:nth-Child(7),.orders ul li:nth-Child(8),.orders ul li:nth-Child(9){
+        width: auto;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:767px) { 
+    .orders  {
+        padding: 60px 0 50px;
+        margin-top: 71px;
+    }
+    .orders ul {
+        flex-direction: column;
+    }
+    ul.order-info li {
+        height: 32px;
+    }
+    
+    ul.order-sm-title li {
+        height: 37px;
+    }
+    .order-container {
+        padding: 0 15px;
+    }
+    ul.order-title {
+        width: 30%;
+    }
+    ul.order-info {
+        width: 70%;
+    }
+    .orders ul li {
+        margin: 5px 0;
+    }
+    .orders ul li:nth-Child(1),.orders ul li:nth-Child(2),.orders ul li:nth-Child(3),.orders ul li:nth-Child(4),.orders ul li:nth-Child(5),.orders ul li:nth-Child(6),.orders ul li:nth-Child(7),.orders ul li:nth-Child(8),.orders ul li:nth-Child(9){
+        width: auto;
+        text-align: left;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px) { 
+    .orders  {
+        margin-top: 71px;
+    }
+    .orders ul {
+        flex-direction: column;
+    }
+    ul.order-info li {
+        height: 32px;
+    }
+    
+    ul.order-sm-title li {
+        height: 35px;
+    }
+    .order-container {
+        padding: 0 15px;
+    }
+    ul.order-title {
+        width: 30%;
+    }
+    ul.order-info {
+        width: 70%;
+    }
+    .orders ul li {
+        margin: 5px 0;
+    }
+    .orders ul li:nth-Child(1),.orders ul li:nth-Child(2),.orders ul li:nth-Child(3),.orders ul li:nth-Child(4),.orders ul li:nth-Child(5),.orders ul li:nth-Child(6),.orders ul li:nth-Child(7),.orders ul li:nth-Child(8),.orders ul li:nth-Child(9){
+        width: auto;
+        text-align: left;
+    }
 }

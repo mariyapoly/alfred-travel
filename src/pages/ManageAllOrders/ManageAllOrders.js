@@ -56,40 +56,58 @@ const ManageAllOrders = () => {
     }
 
     return (
+        // orders start
         <div className="orders">
             <Container>
+                <h2 className="section-title">manage all booking list</h2>
                 {
-                    !orders ? <p>loading.....</p> :
-                        <Row>
-                            <ul className="order-title">
-                                <li>order item</li>
-                                <li>email</li>
-                                <li>name</li>
-                                <li>phone</li>
-                                <li>date</li>
-                                <li>tickets</li>
-                                <li>status</li>
-                                <li>delete</li>
-                                <li>update</li>
-                            </ul>
-                            {
-                                orders.map(order => <ul key={order._id}>
+                    <Row className="order-container">
+                        <ul className="order-title">
+                            <li>book item</li>
+                            <li>email</li>
+                            <li>name</li>
+                            <li>address</li>
+                            <li>phone</li>
+                            <li>date</li>
+                            <li>tickets</li>
+                            <li>status</li>
+                            <li>delete</li>
+                            <li>update</li>
+                        </ul>
+                        {
+                            orders.map(order => <div key={order._id} className="order">
+                                <ul className="order-sm-title">
+                                    <li>book item</li>
+                                    <li>email</li>
+                                    <li>name</li>
+                                    <li>address</li>
+                                    <li>phone</li>
+                                    <li>date</li>
+                                    <li>tickets</li>
+                                    <li>status</li>
+                                    <li>delete</li>
+                                    <li>update</li>
+                                </ul>
+                                <ul className="order-info">
                                     <li>{order?.title}</li>
                                     <li>{order?.email}</li>
                                     <li>{order?.name}</li>
+                                    <li>{order?.address}</li>
                                     <li>{order?.phone}</li>
                                     <li>{order?.date}</li>
                                     <li>{order?.tickets}</li>
                                     <li>{order?.status}</li>
                                     <li><button className="delete-btn" onClick={() => handleDeleteBtn(order._id)}>delete</button></li>
                                     <li><button onClick={() => handleUpdateBtn(order._id)}>update</button></li>
-                                </ul>)
-                            }
-                        </Row>
+                                </ul>
+                            </div>
+                            )
+                        }
+                    </Row>
                 }
             </Container>
-
         </div>
+        // orders end
     );
 };
 

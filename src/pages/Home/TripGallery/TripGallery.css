@@ -1,3 +1,15 @@
+/*-------- gallery-area css --------*/
 .gallery-area {
     padding: 100px 0;
+}
+/*-------- media query --------*/
+@media only screen and (max-width:575px) { 
+    .gallery-area {
+        padding: 60px 0;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .gallery-area {
+        padding: 60px 0;
+    }
 }

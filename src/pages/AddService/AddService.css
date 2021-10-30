@@ -1,12 +1,9 @@
+/*------ add service -------*/
 .add-services {
     padding-top: 80px;
 }
 .add-services h1 {
-    color: #303030;
-    font-size: 47px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 50 px;
+    margin-bottom: 50px;
 }
 .add-services .user-entry-form {
     margin: 30px auto 20px;
@@ -27,4 +24,31 @@
 .add-services .user-entry-form input.submit-btn {
     background: #087dc2;
     border-color: #087dc2;
+}
+/*------- media query -------*/
+@media only screen and (max-width:575px) { 
+    .add-services {
+        padding-top: 60px;
+        margin-top: 71px;
+    }
+    .add-services h1 {
+        margin-bottom: 10px;
+    }
+    .add-services .user-entry-form {
+        padding: 20px;
+}
+
+}
+@media only screen and (min-width:576px) and (max-width:767px) { 
+    .add-services {
+        padding-top: 60px;
+        margin-top: 71px;
+    }
+    .add-services h1 {
+        margin-bottom: 10px;
+    }
+    .add-services .user-entry-form {
+        padding: 20px;
+}
+
 }

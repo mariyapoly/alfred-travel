@@ -14,7 +14,7 @@ const Service = ({ service }) => {
     }
 
     return (
-        <Col lg={4}>
+        <Col lg={4} md={6}>
             <div className="servcie">
                 <img src={img} alt="" />
                 <p className="price">$ {price}</p>

@@ -4,11 +4,13 @@ import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Header.css'
 
+
 const Header = () => {
 
     const { user, logOut } = useAuth();
 
     return (
+        // navbar start
         <Navbar expand="lg" sticky="top">
             <Container>
                 <NavLink className="alfred-logo" to="/">alfred travel</NavLink>
@@ -19,9 +21,9 @@ const Header = () => {
                         {
                             !user.email ? <NavLink activeClassName="selected" to="/login">login</NavLink> :
                                 <div>
-                                    <NavLink activeClassName="selected" to="/myOrder">my order</NavLink>
-                                    <NavLink activeClassName="selected" to="/orders">Manage All Orders</NavLink>
-                                    <NavLink activeClassName="selected" to="/addService">Add service</NavLink>
+                                    <NavLink activeClassName="selected" to="/myOrder">my booking</NavLink>
+                                    <NavLink activeClassName="selected" to="/orders">Manage All booking</NavLink>
+                                    <NavLink activeClassName="selected" to="/addService">Add a service</NavLink>
                                     <button className="logout-btn" onClick={logOut} to="/login">logout</button>
                                     <span className="user-name">{user.displayName}</span>
                                 </div>
@@ -31,6 +33,7 @@ const Header = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+        // navbar end
     );
 };
 

@@ -7,6 +7,7 @@ import bannerImg3 from '../../../images/home-slider-img-3.jpg';
 
 const Banner = () => {
     return (
+        // banner-part start
         <div className="banner-part">
             <Carousel fade>
                 <Carousel.Item>
@@ -46,6 +47,7 @@ const Banner = () => {
                 </Carousel.Item>
             </Carousel>
         </div>
+        // banner-part end
     );
 };
 

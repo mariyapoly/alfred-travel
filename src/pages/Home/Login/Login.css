@@ -48,3 +48,23 @@
     text-decoration: none;
     border-bottom: 1px solid #087dc2;
 }
+
+@media only screen and (max-width:575px) { 
+    .user-entry-form {
+        width: 100%;
+        padding: 135px 0 80px;
+    }
+    .user-entry-form a.signup, .user-entry-form a.login {
+        font-size: 25px;
+    }
+
+}
+@media only screen and (min-width:576px) and (max-width:767px) { 
+    .user-entry-form {
+        width: 100%;
+        padding: 135px 0 80px;
+    }
+    .user-entry-form a.signup, .user-entry-form a.login {
+        font-size: 25px;
+    }
+}

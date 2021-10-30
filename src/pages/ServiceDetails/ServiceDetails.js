@@ -29,6 +29,7 @@ const ServiceDetails = () => {
             title: data.title,
             name: data.name,
             email: data.email,
+            address: data.address,
             phone: data.phone,
             date: data.date,
             tickets: data.tickets,
@@ -48,6 +49,7 @@ const ServiceDetails = () => {
     };
 
     return (
+        // service-details start
         <div>
             <div className="service-details-bg">
                 <h1>{service?.title}</h1>
@@ -95,7 +97,9 @@ const ServiceDetails = () => {
                                 <form onSubmit={handleSubmit(onSubmit)}>
                                     <input type="text" value={user?.displayName} {...register("name")} />
                                     <input type="email" value={user?.email} {...register("email")} />
-                                    <input type="number" placeholder="Phone" {...register("phone")} />
+                                    <input value={service?.title} {...register("title")} />
+                                    <input required type="number" placeholder="Phone *" {...register("phone")} />
+                                    <input required type="text" placeholder="Address *" {...register("address")} />
                                     <input type="date" required placeholder="Date *" {...register("date")} />
                                     <input type="number" required placeholder="Number of tickets *" {...register("tickets")} />
                                     <input className="submit-btn" type="submit" value="book now" />
@@ -106,6 +110,7 @@ const ServiceDetails = () => {
                 </Container>
             </div>
         </div>
+        // service-details end
     );
 };
 

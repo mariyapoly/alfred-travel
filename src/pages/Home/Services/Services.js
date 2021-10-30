@@ -17,9 +17,13 @@ const Services = () => {
     }, [])
 
     return (
+        // service-part start
         <div className="service-part">
             <Container>
-                <h2 className="section-title">Explore the World for Yourself</h2>
+                <div className="section-top">
+                    <h2 className="section-title">Explore the World for Yourself</h2>
+                    <p>Come Explore the world with us and enjoy the best trip of your life. We offer trips to every end of the world.</p>
+                </div>
                 {
                     !services.length ? <Spinner className="spinner-home" animation="border" variant="secondary" /> :
                         <Row>
@@ -32,8 +36,8 @@ const Services = () => {
                         </Row>
                 }
             </Container>
-
         </div>
+        // service-part end
     );
 };
 

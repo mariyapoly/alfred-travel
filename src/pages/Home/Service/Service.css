@@ -1,3 +1,4 @@
+/*----- service css start -----*/
 .servcie img {
     width: 100%;
     height: 550px;
@@ -47,4 +48,21 @@ p.price {
     font-size: 14px;
     border-radius: 35px;
     margin-top: 15px;
+}
+/*-------- media query --------*/
+@media only screen and (max-width:575px) {
+    .sevice-title {
+        font-size: 22px;
+    }
+    p.price {
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .sevice-title {
+        font-size: 22px;
+    }
+    p.price {
+        font-size: 25px;
+    }
 }
