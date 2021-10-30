@@ -9,7 +9,7 @@ const TripGallery = () => {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/gallery')
+        axios.get('https://enigmatic-cliffs-59575.herokuapp.com/gallery')
             .then(function (response) {
                 setImages(response.data);
             })

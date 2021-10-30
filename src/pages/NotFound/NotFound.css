@@ -1,0 +1,124 @@
+/*--------- Not found css -----------*/
+.breadcrumb-bg {
+    background: url(../../images/home-slider-img-2.jpg) no-repeat center;
+    background-size: cover;
+    padding: 120px 0;
+}
+h2.breadcrumb-title {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+}
+ol.breadcrumb a , ol.breadcrumb  span{
+    color: #fff;
+    text-decoration: none;
+}
+ol.breadcrumb span {
+    margin: 0 5px;
+}
+ol.breadcrumb .active {
+    color: #087dc2;
+}
+.not-found-bg {
+    background-color: #F4F4F4;
+}
+.not-found {
+    text-align: center;
+    padding: 10px 0 80px;
+}
+.not-found h1 {
+    font-size: 200px;
+    font-weight: 700;
+    color: #087dc2;
+    line-height: .9;
+    margin-bottom: 45px;
+}
+button.regular-btn {
+    background: #087dc2;
+    border: 0;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+.not-found h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #303030;
+}
+.not-found p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    width: 667px;
+    margin: 0 auto 30px;
+}
+
+
+/*--------- Media Query -----------*/
+@media only screen and (max-width:575px) {
+    .breadcrumb-bg {
+        padding: 95px 0;
+        margin-top: 71px;
+    } 
+    .breadcrumb-container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    h2.breadcrumb-title {
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 24 px;
+        font-weight: 700;
+    }
+    .not-found h1 {
+        font-size: 75px;
+    }
+    .not-found p {
+        width: auto;
+        font-size: 14px;
+    }
+    .not-found h3 {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px) { 
+    .breadcrumb-bg {
+        padding: 95px 0;
+        margin-top: 71px;
+    } 
+    .breadcrumb-container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    h2.breadcrumb-title {
+        color: #fff;
+        font-size: 36px;
+        margin-bottom: 24 px;
+        font-weight: 700;
+    }
+    .not-found h1 {
+        font-size: 75px;
+    }
+    .not-found p {
+        width: auto;
+        font-size: 14px;
+    }
+    .not-found h3 {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px) { 
+    .breadcrumb-bg {
+        margin-top: 71px;
+    } 
+    .not-found h1 {
+        font-size: 150px;
+    }
+}

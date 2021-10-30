@@ -11,13 +11,13 @@ const MyOrder = () => {
     const { user } = useAuth() || {};
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${user?.email}`)
+        fetch(`https://enigmatic-cliffs-59575.herokuapp.com/orders/${user?.email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
 
     const handleDeleteBtn = (id) => {
-        axios.delete(`http://localhost:5000/orders/${id}`)
+        axios.delete(`https://enigmatic-cliffs-59575.herokuapp.com/orders/${id}`)
             .then(function (response) {
                 if (response.data.deletedCount > 0) {
                     swal({

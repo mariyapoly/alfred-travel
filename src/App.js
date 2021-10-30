@@ -12,6 +12,7 @@ import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
 import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
           <PrivateRoute path="/serviceDetails/:id">
             <ServiceDetails></ServiceDetails>
           </PrivateRoute>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
         </Switch>
         <Footer></Footer>
       </Router>

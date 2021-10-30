@@ -10,7 +10,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/services')
+        axios.get('https://enigmatic-cliffs-59575.herokuapp.com/services')
             .then(function (response) {
                 setServices(response.data);
             })

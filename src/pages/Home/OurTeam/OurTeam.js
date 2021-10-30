@@ -9,7 +9,7 @@ const OurTeam = () => {
     const [teams, setTeams] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/team')
+        axios.get('https://enigmatic-cliffs-59575.herokuapp.com/team')
             .then(function (response) {
                 setTeams(response.data);
             })

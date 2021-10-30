@@ -53,6 +53,7 @@
     .user-entry-form {
         width: 100%;
         padding: 135px 0 80px;
+        margin-top: 120px;
     }
     .user-entry-form a.signup, .user-entry-form a.login {
         font-size: 25px;

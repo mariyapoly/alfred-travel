@@ -15,7 +15,7 @@ const ServiceDetails = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/services/${id}`)
+        axios.get(`https://enigmatic-cliffs-59575.herokuapp.com/services/${id}`)
             .then(function (response) {
                 setService(response.data);
             })
@@ -25,7 +25,7 @@ const ServiceDetails = () => {
     const onSubmit = data => {
         data.title = service?.title
         data.status = 'Pending'
-        axios.post('http://localhost:5000/addOrder', {
+        axios.post('https://enigmatic-cliffs-59575.herokuapp.com/addOrder', {
             title: data.title,
             name: data.name,
             email: data.email,

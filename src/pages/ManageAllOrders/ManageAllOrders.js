@@ -10,13 +10,13 @@ const ManageAllOrders = () => {
     const [remeaning, setRemeaning] = useState(null)
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://enigmatic-cliffs-59575.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [remeaning])
 
     const handleDeleteBtn = (id) => {
-        axios.delete(`http://localhost:5000/orders/${id}`)
+        axios.delete(`https://enigmatic-cliffs-59575.herokuapp.com/orders/${id}`)
             .then(function (response) {
                 if (response.data.deletedCount > 0) {
                     swal({
@@ -41,7 +41,7 @@ const ManageAllOrders = () => {
     }
 
     const handleUpdateBtn = (id) => {
-        axios.put(`http://localhost:5000/orders/${id}`)
+        axios.put(`https://enigmatic-cliffs-59575.herokuapp.com/orders/${id}`)
             .then(function (response) {
                 if (response.data.modifiedCount) {
                     swal({

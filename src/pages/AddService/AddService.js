@@ -9,7 +9,7 @@ const AddService = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/services', {
+        axios.post('https://enigmatic-cliffs-59575.herokuapp.com/services', {
             title: data.title,
             des: data.des,
             img: data.img,
