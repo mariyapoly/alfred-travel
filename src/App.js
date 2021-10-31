@@ -15,6 +15,7 @@ import Header from './pages/Shared/Header/Header';
 import NotFound from './pages/NotFound/NotFound';
 import AboutUs from './pages/AboutUs/AboutUs';
 import OurService from './pages/OurService/OurService';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path="/ourService">
             <OurService></OurService>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
           </Route>
           <Route path="/login">
             <Login></Login>

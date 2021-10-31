@@ -50,7 +50,7 @@
 
 @media only screen and (min-width:576px) and (max-width:767px) { 
     .our-history-content {
-        padding: 60 px10px;
+        padding: 60px 10px;
     }
     .our-history-content p, .our-history-content .sub-title {
         width: auto;

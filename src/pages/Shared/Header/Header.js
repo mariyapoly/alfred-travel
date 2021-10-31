@@ -20,6 +20,7 @@ const Header = () => {
                         <NavLink activeClassName="selected" to="/home">Home</NavLink>
                         <NavLink activeClassName="selected" to="/aboutUs">about us</NavLink>
                         <NavLink activeClassName="selected" to="/ourService">our service</NavLink>
+                        <NavLink activeClassName="selected" to="/contact">Contact us</NavLink>
                         {
                             !user.email ? <NavLink activeClassName="selected" to="/login">login</NavLink> : <>
                                 <NavDropdown className="dropdown" title="dashboard" id="basic-nav-dropdown">

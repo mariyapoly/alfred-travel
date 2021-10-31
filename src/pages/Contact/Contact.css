@@ -1,0 +1,111 @@
+/*--------- Contact-area css-----------*/
+.contact-area {
+    padding: 80px 0;
+}
+.single-contact {
+    background: #fff;
+    box-shadow: 0px 0px 26px 16px rgb(240 238 238 / 75%);
+    -webkit-box-shadow: 0px 0px 26px 16px rgb(240 238 238 / 75%);
+    -moz-box-shadow: 0px 0px 26px 16px rgba(240,238,238,0.75);
+    text-align: center;
+    padding: 35px 74px;
+}
+.contact-icon {
+    font-size: 38px;
+    color: #fff;
+}
+.single-contact p {
+    font-size: 18px;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+p.contact {
+    width: 90px;
+    height: 90px;
+    background: #087dc2;
+    line-height: 107px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.single-contact h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #303030;
+}
+.contact-feild {
+    margin: 30px 0 100px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.contact-thumb img {
+    width: 100%;
+}
+.contact-form input {
+    width: 46%;
+    margin: 0 11px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.contact-form textarea {
+    width: 97%;
+    margin: 0 11px;
+    margin-bottom: 11px;
+    padding: 10px 15px;
+    resize: none;
+    height: 120px;
+}
+
+/*--------- Media Query -----------*/
+@media only screen and (max-width:575px) {
+    
+    .single-contact {
+        margin-bottom: 30px;
+        padding: 35px 30px;
+    }
+    .contact-feild {
+        padding: 30px 0;
+    }
+    .contact-form {
+        margin-bottom: 30px;
+    }
+    .contact-form input {
+        width: 96%;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px) { 
+
+    .single-contact {
+        margin-bottom: 30px;
+        padding: 35px 30px;
+    }
+    .contact-feild {
+        padding: 30px 0;
+    }
+    .contact-form {
+        margin-bottom: 30px;
+    }
+    .contact-form input {
+        width: 96%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px) { 
+
+    .single-contact {
+        margin-bottom: 30px;
+    }
+    .contact-feild {
+        padding: 30px 0;
+    }
+    .contact-form {
+        margin-bottom: 30px;
+    }
+}

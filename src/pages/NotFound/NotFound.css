@@ -21,9 +21,7 @@ ol.breadcrumb a , ol.breadcrumb  span{
 ol.breadcrumb span {
     margin: 0 5px;
 }
-ol.breadcrumb .active {
-    color: #087dc2;
-}
+
 .not-found-bg {
     background-color: #F4F4F4;
 }
@@ -42,6 +40,7 @@ button.regular-btn {
     background: #087dc2;
     border: 0;
     color: #fff;
+    text-transform: uppercase;
     padding: 12px 25px;
     border-radius: 35px;
     -webkit-border-radius: 35px;

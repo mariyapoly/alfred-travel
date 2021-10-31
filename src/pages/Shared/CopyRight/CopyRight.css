@@ -1,0 +1,10 @@
+/* copyright css */
+.copyright {
+    text-align: center;
+    padding: 30px 0;
+    background: #f9fafa;
+    border-top: 1px solid rgb(185, 180, 180);
+}
+.copyright p {
+    color: #666;
+}
