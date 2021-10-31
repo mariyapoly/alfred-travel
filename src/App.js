@@ -13,6 +13,8 @@ import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
 import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
 import NotFound from './pages/NotFound/NotFound';
+import AboutUs from './pages/AboutUs/AboutUs';
+import OurService from './pages/OurService/OurService';
 
 function App() {
   return (
@@ -25,6 +27,12 @@ function App() {
           </Route>
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/aboutUs">
+            <AboutUs></AboutUs>
+          </Route>
+          <Route path="/ourService">
+            <OurService></OurService>
           </Route>
           <Route path="/login">
             <Login></Login>

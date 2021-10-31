@@ -30,7 +30,6 @@ const ServiceDetails = () => {
             name: data.name,
             email: data.email,
             address: data.address,
-            phone: data.phone,
             date: data.date,
             tickets: data.tickets,
             status: data.status
@@ -98,7 +97,6 @@ const ServiceDetails = () => {
                                     <input type="text" value={user?.displayName} {...register("name")} />
                                     <input type="email" value={user?.email} {...register("email")} />
                                     <input value={service?.title} {...register("title")} />
-                                    <input required type="number" placeholder="Phone *" {...register("phone")} />
                                     <input required type="text" placeholder="Address *" {...register("address")} />
                                     <input type="date" required placeholder="Date *" {...register("date")} />
                                     <input type="number" required placeholder="Number of tickets *" {...register("tickets")} />

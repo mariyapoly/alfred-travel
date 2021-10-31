@@ -1,0 +1,35 @@
+.about-area {
+    padding: 100px 0 80px;
+    background: #F4F4F4;
+}
+.single-about {
+    text-align: center;
+}
+.about-icon {
+    font-size: 60px;
+    color: #087dc2;
+}
+.single-about h5 {
+    color: #303030;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 20px 0 15px;
+}
+.single-about p {
+    color: #666;
+    padding: 0 9px;
+}
+
+/*--------- Media Query -----------*/
+@media only screen and (max-width:575px) {
+
+    .about-area {
+        padding: 65px 0;
+    }
+
+}
+@media only screen and (min-width:576px) and (max-width:767px) { 
+    .about-area {
+        padding: 65px 0;
+    }
+}

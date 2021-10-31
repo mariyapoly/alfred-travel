@@ -14,18 +14,20 @@ const NotFound = () => {
         <>
             {/* breadcrumb-bg start */}
             <div className="breadcrumb-bg">
-                <Container>
-                    <div className="breadcrumb-container d-flex justify-content-between align-items-center">
-                        <h2 className="breadcrumb-title">Page Not Found</h2>
-                        <Breadcrumb>
-                            <NavLink to="/home">Home</NavLink>
-                            <span>/</span>
-                            <NavLink to="/*" activeClassName="active">
-                                Error 404
-                            </NavLink>
-                        </Breadcrumb>
-                    </div>
-                </Container>
+                <div className="overlay">
+                    <Container>
+                        <div className="breadcrumb-container d-flex justify-content-between align-items-center">
+                            <h2 className="breadcrumb-title">Page Not Found</h2>
+                            <Breadcrumb>
+                                <NavLink to="/home">Home</NavLink>
+                                <span>/</span>
+                                <NavLink to="/*" activeClassName="active">
+                                    Error 404
+                                </NavLink>
+                            </Breadcrumb>
+                        </div>
+                    </Container>
+                </div>
             </div>
             {/* breadcrumb-bg end */}
             {/* notfound start */}

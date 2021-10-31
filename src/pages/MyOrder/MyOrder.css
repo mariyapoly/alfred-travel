@@ -27,23 +27,20 @@
     width: 15%;
 }
 .my-orders ul li:nth-Child(4) {
-    width: 10%;
+    width: 21%;
 }
 .my-orders ul li:nth-Child(5) {
-    width: 11%;
-}
-.my-orders ul li:nth-Child(6) {
     width: 8%;
 }
-.my-orders ul li:nth-Child(7) {
+.my-orders ul li:nth-Child(6) {
     width: 5%;
     text-align: center;
 }
-.my-orders ul li:nth-Child(8) {
+.my-orders ul li:nth-Child(7) {
     width: 7%;
     text-align: right;
 }
-.my-orders ul li:nth-Child(9) {
+.my-orders ul li:nth-Child(8) {
     width: 7%;
     text-align: right;
 }

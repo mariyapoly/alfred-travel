@@ -67,7 +67,6 @@ const ManageAllOrders = () => {
                             <li>email</li>
                             <li>name</li>
                             <li>address</li>
-                            <li>phone</li>
                             <li>date</li>
                             <li>tickets</li>
                             <li>status</li>
@@ -81,7 +80,6 @@ const ManageAllOrders = () => {
                                     <li>email</li>
                                     <li>name</li>
                                     <li>address</li>
-                                    <li>phone</li>
                                     <li>date</li>
                                     <li>tickets</li>
                                     <li>status</li>
@@ -93,7 +91,6 @@ const ManageAllOrders = () => {
                                     <li>{order?.email}</li>
                                     <li>{order?.name}</li>
                                     <li>{order?.address}</li>
-                                    <li>{order?.phone}</li>
                                     <li>{order?.date}</li>
                                     <li>{order?.tickets}</li>
                                     <li>{order?.status}</li>

@@ -22,8 +22,22 @@ nav.navbar {
     font-weight: 700;
     font-size: 14px;
 }
+a#basic-nav-dropdown {
+    padding: 0;
+    color: #666;
+}
+.dropdown-menu a {
+    margin: 0;
+    display: block;
+    padding: 5px 15px;
+}
+.dropdown-menu {
+    width: 203px;
+    padding: 21px 0;
+}
+
 .user-name {
-    margin-left: 40px;
+    margin-left: 10px;
     color: #666;
     font-weight: 700;
     font-size: 16px;
@@ -60,6 +74,15 @@ nav.navbar {
         display: block;
         margin: 10px;
     }
+    .dropdown-menu {
+        padding: 10px 0;
+    }
+    .dropdown-menu a {
+        padding: 3px 10px;
+    }
+    button.logout-btn {
+        width: 57px;
+    }
     .user-name {
         margin-left: 10px;
     }
@@ -86,6 +109,9 @@ nav.navbar {
         display: block;
         margin: 10px;
     }
+    button.logout-btn {
+        width: 57px;
+    }
     .user-name {
         margin-left: 10px;
     }
@@ -111,6 +137,9 @@ nav.navbar {
         margin-left: 0;
         display: block;
         margin: 10px;
+    }
+    button.logout-btn {
+        width: 57px;
     }
     .user-name {
         margin-left: 10px;

@@ -24,28 +24,26 @@
     width: 15%;
 }
 .orders ul li:nth-Child(4) {
-    width: 12%;
+    width: 20%;
 }
+
 .orders ul li:nth-Child(5) {
     width: 8%;
+    text-align: center;
 }
 .orders ul li:nth-Child(6) {
-    width: 8%;
+    width: 5%;
     text-align: center;
 }
 .orders ul li:nth-Child(7) {
-    width: 5%;
-    text-align: center;
+    width: 6%;
+    text-align: right;
 }
 .orders ul li:nth-Child(8) {
     width: 6%;
     text-align: right;
 }
 .orders ul li:nth-Child(9) {
-    width: 6%;
-    text-align: right;
-}
-.orders ul li:nth-Child(10) {
     width: 6%;
     text-align: right;
 }

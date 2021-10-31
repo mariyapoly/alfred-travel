@@ -22,7 +22,7 @@ const MyOrder = () => {
                 if (response.data.deletedCount > 0) {
                     swal({
                         title: "Are you sure?",
-                        text: "delete for this order item",
+                        text: "delete this order item",
                         icon: "warning",
                         dangerMode: true,
                     })
@@ -53,7 +53,6 @@ const MyOrder = () => {
                         <li>email</li>
                         <li>name</li>
                         <li>address</li>
-                        <li>phone</li>
                         <li>date</li>
                         <li>tickets</li>
                         <li>status</li>
@@ -66,7 +65,6 @@ const MyOrder = () => {
                                 <li>email</li>
                                 <li>name</li>
                                 <li>address</li>
-                                <li>phone</li>
                                 <li>date</li>
                                 <li>tickets</li>
                                 <li>status</li>
@@ -77,7 +75,6 @@ const MyOrder = () => {
                                 <li>{order?.email}</li>
                                 <li>{order?.name}</li>
                                 <li>{order?.address}</li>
-                                <li>{order?.phone}</li>
                                 <li>{order?.date}</li>
                                 <li>{order?.tickets}</li>
                                 <li>{order?.status}</li>
